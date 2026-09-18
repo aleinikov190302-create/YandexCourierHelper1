@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Калькулятор курьера</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f3f5;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 18px;
+    border: 0;
+    border-radius: 12px;
+    background: #ffcc00;
+    font-size: 18px;
+    font-weight: bold;
+}
+.result {
+    font-size: 18px;
+    line-height: 1.7;
+}
+.big {
+    font-size: 28px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>🚕 Калькулятор курьера</h1>
+
+<div class="card">
+
+<label>Заработок за заказ, руб.</label>
+<input id="pay" type="number" step="0.01" placeholder="Например 8">
+
+<label>Расстояние, км</label>
+<input id="distance" type="number" step="0.1" placeholder="Например 12">
+
+<label>Расход метана, м³ / 100 км</label>
+<input id="consumption" type="number" step="0.1" placeholder="Например 10">
+
+<label>Цена метана, руб. / м³</label>
+<input id="gasPrice" type="number" step="0.01" placeholder="Нап
